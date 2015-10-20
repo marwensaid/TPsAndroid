@@ -9,6 +9,41 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/activity_main" tools:context=".MainActivity">
 
-    <TextView android:text="Hello World!" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="S&apos;enregistrer"
+        android:id="@+id/btnEnr"
+        android:textColor="@android:color/holo_blue_light"
+        android:textStyle="bold"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/btnCo" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Se connecter"
+        android:id="@+id/btnCo"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:textColor="@android:color/holo_blue_light" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Bienvenue"
+        android:id="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/btnEnr" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp" />
+
 </RelativeLayout>
