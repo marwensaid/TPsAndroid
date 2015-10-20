@@ -22,9 +22,14 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        Uri chemin = Uri.parse("http://www.google.fr");
-        Intent naviguer = new Intent(Intent.ACTION_VIEW, chemin);
-        startActivity(naviguer);
+        //Uri chemin = Uri.parse("http://www.google.fr");
+        //Intent naviguer = new Intent(Intent.ACTION_VIEW, chemin);
+        //startActivity(naviguer);
+
+        Intent intentLogin = new Intent(this,LoginActivity.class);
+        intentLogin.putExtra("login", "hello");
+        intentLogin.putExtra("login2", "hello2");
+        startActivity(intentLogin);
 
         Uri numero = Uri.parse("tel:0606060606");
         Intent appeler = new Intent(Intent.ACTION_CALL, numero);
@@ -73,4 +78,6 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+
 }

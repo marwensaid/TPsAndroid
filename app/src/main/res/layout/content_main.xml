@@ -17,7 +17,7 @@
         android:textColor="@android:color/holo_blue_light"
         android:textStyle="bold"
         android:layout_alignParentStart="true"
-        android:layout_above="@+id/btnCo" />
+        android:layout_below="@+id/textView" />
 
     <Button
         android:layout_width="match_parent"
@@ -26,17 +26,18 @@
         android:id="@+id/btnCo"
         android:layout_centerHorizontal="true"
         android:textStyle="bold"
-        android:layout_alignParentBottom="true"
-        android:textColor="@android:color/holo_blue_light" />
+        android:textColor="@android:color/holo_blue_light"
+        android:layout_below="@+id/btnEnr" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Bienvenue"
+        android:text="bienvenue"
         android:id="@+id/textView"
         android:layout_centerHorizontal="true"
-        android:layout_above="@+id/btnEnr" />
+        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@+id/imageView" />
 
     <ImageView
         android:layout_width="wrap_content"
