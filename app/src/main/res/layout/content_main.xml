@@ -17,7 +17,7 @@
         android:textColor="@android:color/holo_blue_light"
         android:textStyle="bold"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/textView" />
+        android:layout_alignParentBottom="true" />
 
     <Button
         android:layout_width="match_parent"
@@ -27,17 +27,17 @@
         android:layout_centerHorizontal="true"
         android:textStyle="bold"
         android:textColor="@android:color/holo_blue_light"
-        android:layout_below="@+id/btnEnr" />
+        android:layout_above="@+id/btnEnr" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="bienvenue"
+        android:text="bienvenue veuillez selectionner s'enregistrer pour créer un compte ou se connecter si vous avez déja un."
         android:id="@+id/textView"
         android:layout_centerHorizontal="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignBottom="@+id/imageView" />
+        android:textAlignment="center"
+        android:layout_above="@+id/btnCo" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -45,6 +45,6 @@
         android:id="@+id/imageView"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="65dp" />
+        android:layout_marginTop="70dp" />
 
 </RelativeLayout>

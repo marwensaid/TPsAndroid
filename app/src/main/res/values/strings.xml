@@ -16,4 +16,5 @@
         completions."
     </string>
     <string name="title_activity_login1">Sign in</string>
+    <string name="title_activity_register">RegisterActivity</string>
 </resources>
